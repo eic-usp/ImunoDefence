@@ -1,0 +1,11 @@
+LINFÓCITOS T CITOTÓXICO
+
+O Linfócito T Citotóxico (CD8), assim como os neutrófilos, é um tipo de Leucócito, porém ele atua de uma forma diferente com a capacidade de atacar células específicas através da imunidade adaptativa. Essa resposta é gerada quando um antígeno, no caso uma parte do vírus, é apresentado para o linfócito.
+Dentro do jogo o Linfócito é uma célula de defesa especializada e muito eficiente no combate ao vírus, porém precisa estar próxima às células dendríticas para ser ativado.
+
+- Área de efeito: grande
+- Tipo de alvo: inimigo único
+- Tipo de dano: contínuo
+- Velocidade de ataque: contínua
+- Dano: crescente (até um limite)
+- Efeito adicional: -

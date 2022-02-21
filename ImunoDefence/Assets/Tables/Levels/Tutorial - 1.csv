@@ -1,0 +1,9 @@
+TotalWaves;TotalSpawnPoints;ImmunityReward;SP0
+int;int;float;string
+7;1;100;1,0,50
+7;1;100;3,0,50
+7;1;100;5,0,50
+7;1;100;12,0,50
+7;1;100;25,0,50
+7;1;100;50,0,35
+7;1;100;75,0,20
