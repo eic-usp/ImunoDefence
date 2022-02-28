@@ -78,7 +78,7 @@ public class Win : MonoBehaviour
             }
 
             if(RBonus>0){
-                StarBonus.transform.GetComponent<SVGImage>().sprite = goldStar;
+                StarBonus.transform.GetComponent<Image>().sprite = goldStar;
                 Points.text = (RBonus * 100).ToString() + "%";
             }
             

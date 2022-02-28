@@ -7,7 +7,7 @@ public class MultipliesViruses : BaseNoAttack
     [SerializeField] private bool destroyed = false;
     [SerializeField] private int waveToRespawn = 0;
     [SerializeField] private int progression = 0;
-    private List<Virus> enemies = new List<Virus>();
+    [SerializeField] private List<Virus> enemies = new List<Virus>();
     private List<Color> StandardColors = new List<Color>();//Lista com cores padrão da torre
     Animator Anim; //Animator da celula
 
@@ -96,7 +96,8 @@ public class MultipliesViruses : BaseNoAttack
             waveToRespawn = HordeManager.instance.waveNumber + 2;
             foreach (Virus enemy in enemies)
             {
-                Destroy(enemy.gameObject);
+                if (enemy != null)
+                    Destroy(enemy.gameObject);
             }
             this.gameObject.GetComponent<Tower>().targets.Clear();
             changeTurretColor(Color.green);

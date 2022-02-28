@@ -38,7 +38,7 @@ public class MenuPause : MonoBehaviour
             return;
 
         anim = menu.transform.GetChild(0).GetComponent<Animator>();
-        if(anim.GetCurrentAnimatorStateInfo(0).IsName("Pause") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f && paused ==true){
+        if(anim != null && anim.GetCurrentAnimatorStateInfo(0).IsName("Pause") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f && paused ==true){
             Time.timeScale = 0f;
         }
     }

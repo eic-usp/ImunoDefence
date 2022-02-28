@@ -8,6 +8,8 @@ public class TargetNMultipleEnemies : BaseTarget
    	{
     	float distanceToEnemy;
 
+		List<GameObject> targetsToRemove = new List<GameObject>();
+
 		foreach(GameObject enemy in targets)
 		{
 			if(enemy != null)
@@ -16,11 +18,17 @@ public class TargetNMultipleEnemies : BaseTarget
 				
 				//Se o inimigo sair do alcance ele não é mais um alvo
 				if(distanceToEnemy>range)
-					targets.Remove(enemy);
+					targetsToRemove.Add(enemy);
+					//targets.Remove(enemy);
 			}
 			else
-				targets.Remove(enemy);
+				targetsToRemove.Add(enemy);
+				//targets.Remove(enemy);
 
+		}
+
+		foreach(GameObject target in targetsToRemove){
+			targets.Remove(target);
 		}
 
 		if(targets.Count == maxTargets)

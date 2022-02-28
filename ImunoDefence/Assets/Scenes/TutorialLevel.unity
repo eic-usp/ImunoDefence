@@ -16975,8 +16975,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Esse ai e o Neutrofilo, ele e nossa primeira linha de defesa, e apesar
-    de nao serem tao fortes,  nos ajudam bastante contra os invasores!
+  m_text: "Esse ai \xE9 o Neutr\xF3filo, ele \xE9 nossa primeira linha de defesa,
+    e apesar de n\xE3o serem t\xE3o fortes,  nos ajudam bastante contra os invasores!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -67001,6 +67001,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5911702933756208721, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911702933756208721, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911702933756208721, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5911702933870681438, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: m_textAlignment
@@ -67171,6 +67186,11 @@ PrefabInstance:
       propertyPath: spawnPoints.Array.data[0]
       value: 
       objectReference: {fileID: 2003263287}
+    - target: {fileID: 5911702934351136075, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: Anim
+      value: 
+      objectReference: {fileID: 5911702934526751171}
     - target: {fileID: 5911702934351136075, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: audioM
@@ -67437,6 +67457,12 @@ RectTransform:
 --- !u!224 &5911702934526751170 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5911702933100787209, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 5911702934526751168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5911702934526751171 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7468994811134784918, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
     type: 3}
   m_PrefabInstance: {fileID: 5911702934526751168}
   m_PrefabAsset: {fileID: 0}

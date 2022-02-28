@@ -21842,8 +21842,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "A febre \xE9 um mecanismo de defesa natural do corpo em resposta aos ataques,
-    ela aumenta a temperatura do corpo e aumenta a atividade das celulas de defesa,
-    como os macrofagos."
+    ela aumenta a temperatura do corpo e aumenta a atividade das c\xE9lulas de defesa,
+    como os macr\xF3fagos."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26935,6 +26935,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5911702933100787209, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -12.549927
+      objectReference: {fileID: 0}
     - target: {fileID: 5911702933170757575, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: m_textInfo.lineCount
@@ -26973,6 +26978,11 @@ PrefabInstance:
     - target: {fileID: 5911702933268560035, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911702933315230732, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5911702933319139556, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
@@ -27090,6 +27100,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5911702933756208721, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911702933756208721, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911702933756208721, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5911702933870681438, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: m_textInfo.lineCount
@@ -27180,6 +27205,11 @@ PrefabInstance:
       propertyPath: m_textInfo.characterCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5911702934251019512, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -28.000122
+      objectReference: {fileID: 0}
     - target: {fileID: 5911702934287217775, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -27251,6 +27281,11 @@ PrefabInstance:
       propertyPath: hp
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5911702934351136075, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: Anim
+      value: 
+      objectReference: {fileID: 1476991835}
     - target: {fileID: 5911702934558832857, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: m_textInfo.lineCount
@@ -27483,6 +27518,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6, type: 3}
+--- !u!95 &1476991835 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7468994811134784918, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1476991834}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1477274038
 PrefabInstance:
   m_ObjectHideFlags: 0

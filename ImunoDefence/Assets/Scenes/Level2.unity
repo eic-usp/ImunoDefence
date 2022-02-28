@@ -1176,6 +1176,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 38175708}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &38534094 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5911702934351136068, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 420054166}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1feaf0c30a731764da1300f1e8c24bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &41749636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7541,7 +7553,7 @@ MonoBehaviour:
   - {fileID: 1080536270}
   button: {fileID: 1186949367}
   block: {fileID: 0}
-  shop: {fileID: 0}
+  shop: {fileID: 38534094}
   levelNumber: 0
 --- !u!1001 &395441706
 PrefabInstance:
@@ -8104,6 +8116,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2973491749618866517, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3528929093014441632, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: levelNumber
@@ -8134,6 +8151,16 @@ PrefabInstance:
       propertyPath: scenes.Array.data[3]
       value: 
       objectReference: {fileID: 1080536270}
+    - target: {fileID: 5911702933100787208, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911702933100787209, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -12.549927
+      objectReference: {fileID: 0}
     - target: {fileID: 5911702933170757575, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: m_textInfo.lineCount
@@ -8172,6 +8199,11 @@ PrefabInstance:
     - target: {fileID: 5911702933268560035, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911702933315230732, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5911702933319139556, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
@@ -8289,6 +8321,31 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5911702933756208721, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911702933756208721, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911702933756208721, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911702933756208721, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911702933756208722, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5911702933870681438, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: m_textInfo.lineCount
@@ -8379,6 +8436,16 @@ PrefabInstance:
       propertyPath: m_textInfo.characterCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5911702934137890973, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911702934251019512, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -28.000122
+      objectReference: {fileID: 0}
     - target: {fileID: 5911702934287217775, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -8419,6 +8486,11 @@ PrefabInstance:
       propertyPath: m_textInfo.characterCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5911702934351136067, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5911702934351136074, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: hordeTable
@@ -8440,6 +8512,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3351929709863127480, guid: a5d997662aa7f59ba80df7689ee5ed2a,
         type: 3}
+    - target: {fileID: 5911702934351136075, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: Anim
+      value: 
+      objectReference: {fileID: 431794937}
     - target: {fileID: 5911702934351136075, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: currentHidratation
@@ -8488,6 +8565,11 @@ PrefabInstance:
     - target: {fileID: 5911702934575693408, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
         type: 3}
       propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911702934640462694, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5911702934655795793, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
@@ -8672,6 +8754,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6, type: 3}
+--- !u!95 &431794937 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7468994811134784918, guid: 36a93e7b0c9b4eeb2a9cf6b5df6664a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 420054166}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &443757069
 GameObject:
   m_ObjectHideFlags: 0
@@ -39897,8 +39985,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Essa barra representa o n\xEDvel hidrata\xE7\xE3o do corpo, e parece que
-    ele est\xE1 ficando desidratado. Clique sobre o copo para consumir \xE1gua."
+  m_text: "Essa barra representa o n\xEDvel de hidrata\xE7\xE3o do corpo, e parece
+    que ele est\xE1 ficando desidratado. Clique sobre o copo para consumir \xE1gua."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

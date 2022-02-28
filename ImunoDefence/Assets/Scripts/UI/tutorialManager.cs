@@ -26,8 +26,8 @@ public class tutorialManager : MonoBehaviour {
     }
 
     public void loadNext() {
-        scenes[current].SetActive(false);
+        if (current < scenes.Length) scenes[current].SetActive(false);
         current++;
-        scenes[current].SetActive(true);
+        if (current < scenes.Length) scenes[current].SetActive(true);
     }
 }

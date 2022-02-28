@@ -85,6 +85,10 @@ public class HordeManager:MonoBehaviour
             timeRemaningNextWaveText.text = "fim";
         }
 
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        if (enemies.Length <= 0)
+            activeViruses = 0;
+
         //condicao de vitoria
         if(wavesRemaning <= 0 && activeViruses <= 0)
             Win();

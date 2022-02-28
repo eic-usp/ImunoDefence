@@ -90,13 +90,13 @@ public class LifeManager : MonoBehaviour
             currentHidratation = HidratationBar.value;
         }
 
-        if(HidratationBar.value < 0.4 && isDehydrated==false){
-            AttackAttributesManager.instance.buffLinfocito(-0.5f);
-            AttackAttributesManager.instance.buffNeutrofilo(-0.5f,-0.5f);
-            AttackAttributesManager.instance.buffMacrofago(-0.5f,-0.5f);
-            isDehydrated = true;
-            Anim.SetBool("isDehydrated",true);
-        }
+        // if(HidratationBar.value < 0.4 && isDehydrated==false){
+        //     AttackAttributesManager.instance.buffLinfocito(-0.5f);
+        //     AttackAttributesManager.instance.buffNeutrofilo(-0.5f,-0.5f);
+        //     AttackAttributesManager.instance.buffMacrofago(-0.5f,-0.5f);
+        //     isDehydrated = true;
+        //     Anim.SetBool("isDehydrated",true);
+        // }
         if(audioM == null) {//caso nao tenha conseguido achar o manager no awake e no start, ele pega por aqui
             audioM = FindObjectOfType<AudioManager>();
             PlayMusic();
