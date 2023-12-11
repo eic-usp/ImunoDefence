@@ -3,7 +3,10 @@ guid: 864e50551bebc6b4b9c60752c3b8c790
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - turretToBuild: {instanceID: 0}
+  - pistaDePouso: {instanceID: 0}
+  - rangeIndicatorPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

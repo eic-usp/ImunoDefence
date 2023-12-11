@@ -42,7 +42,7 @@ public class Win : MonoBehaviour
         SaveLoader.saveFile.stars[sceneIndex-2] = R;
         SaveLoader.SaveGame();
         
-        DoLittleStars(R);
+        DoLittleStars(fHP);
         RBonus = (ImmunityManager.instance.getImmunity())/200f;
     }
 
@@ -114,17 +114,50 @@ public class Win : MonoBehaviour
 
     }*/
 
-    public void DoLittleStars(int Q){
-        
-        if(Q==null){
+    public void DoLittleStars(int Q)
+    {
+
+        if (Q == null)
+        {
             return;
         }
 
-        Debug.Log("Q:"+Q);
-
-        for(int i=0;i<Q;i++){
-            Stars[i].transform.GetComponent<SVGImage>().sprite = goldStar;
-            Stars[i].transform.GetComponent<LittleStars>().filled = true;
+        Debug.Log("Q:" + Q);
+        if (Q == 10)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Stars[i].transform.GetComponent<SVGImage>().sprite = goldStar;
+                Stars[i].transform.GetComponent<LittleStars>().filled = true;
+                Debug.Log("full");
+            }
+        }
+        if (Q > 5 && Q < 10)
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                Stars[i].transform.GetComponent<SVGImage>().sprite = goldStar;
+                Stars[i].transform.GetComponent<LittleStars>().filled = true;
+                Debug.Log("deve ser dois");
+            }
+        }
+        if (Q > 4 && Q < 6)
+        {
+            for (int i = 0; i < 1; i++)
+            {
+                Stars[i].transform.GetComponent<SVGImage>().sprite = goldStar;
+                Stars[i].transform.GetComponent<LittleStars>().filled = true;
+                Debug.Log("deve ser 1");
+            }
+        }
+        if (Q > 0 && Q < 3)
+        {
+            for (int i = 0; i < Q; i++)
+            {
+                //Stars[i].transform.GetComponent<SVGImage>().sprite = goldStar;
+                //Stars[i].transform.GetComponent<LittleStars>().filled = true;
+                Debug.Log("deve ser 0");
+            }
         }
         //Debug.Log("Subtract " +(int)Q *100 * Hl);
         //h = h - (int)Q * 100 *Hl;

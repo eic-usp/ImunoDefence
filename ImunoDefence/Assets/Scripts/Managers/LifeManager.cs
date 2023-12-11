@@ -89,14 +89,20 @@ public class LifeManager : MonoBehaviour
             elapsedTime = 0f;
             currentHidratation = HidratationBar.value;
         }
+        if (HidratationBar.value < 0.4)
+        {
+            Anim.SetBool("isDehydrated", true);
+            AttackAttributesManager.instance.buffLinfocito(-1);
+            AttackAttributesManager.instance.buffNeutrofilo(-1, -1);
+            AttackAttributesManager.instance.buffMacrofago(-1, -1);
+        }
+         if (HidratationBar.value == 0.0 ){
 
-        // if(HidratationBar.value < 0.4 && isDehydrated==false){
-        //     AttackAttributesManager.instance.buffLinfocito(-0.5f);
-        //     AttackAttributesManager.instance.buffNeutrofilo(-0.5f,-0.5f);
-        //     AttackAttributesManager.instance.buffMacrofago(-0.5f,-0.5f);
-        //     isDehydrated = true;
-        //     Anim.SetBool("isDehydrated",true);
-        // }
+             Debug.Log("sede");
+             isDehydrated = true;
+             Anim.SetBool("isDehydrated",true);
+            Defeat();
+         }
         if(audioM == null) {//caso nao tenha conseguido achar o manager no awake e no start, ele pega por aqui
             audioM = FindObjectOfType<AudioManager>();
             PlayMusic();
@@ -136,8 +142,9 @@ public class LifeManager : MonoBehaviour
         FeverScreen.SetActive(false);
         if(defeat==false){
             //Debug.Log("ganhou");
-            EndScreen.SetActive(true);
+            EndScreen.SetActive(true); 
             EndScreen.transform.GetChild(0).gameObject.SetActive(true);
+            LittleStars.instance.estrelas();
         }
         // Win.iHP = hpIni;
         // Win.fHP = hp;

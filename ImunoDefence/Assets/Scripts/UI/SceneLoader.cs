@@ -12,6 +12,10 @@ public class SceneLoader : MonoBehaviour
     public Slider slider;
     float progress;
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     public void PlayGame() {
         SceneManager.LoadScene("StageMenu");
         //SaveLoader.LoadGame();

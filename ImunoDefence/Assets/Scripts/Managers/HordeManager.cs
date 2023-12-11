@@ -33,6 +33,7 @@ public class HordeManager:MonoBehaviour
     [SerializeField] private float endValue=0;
     [SerializeField] private float timeForDecrease=10;
     [SerializeField] private float elapsedTime=10;
+    public bool flag = false;
 
     //[SerializeField] private float timeRewardDecrease = 1.75f;
     //[SerializeField] private float RewardCountdown = 1.75f;
@@ -78,8 +79,14 @@ public class HordeManager:MonoBehaviour
 
     void Update()
     {
-        wavesRemaningText.text = waveNumber.ToString() + "/" + totalWaves.ToString(); 
-        if(wavesRemaning > 0) {
+        wavesRemaningText.text = waveNumber.ToString() + "/" + totalWaves.ToString();
+        if(waveNumber == 0)
+        {
+            timeRemaningNextWaveText.text = "60".ToString();
+            flag = true;
+        }
+
+        else if(wavesRemaning > 0 && waveNumber >= 1) {
             timeRemaningNextWaveText.text = Mathf.FloorToInt(countdown).ToString(); 
         }else {
             timeRemaningNextWaveText.text = "fim";
@@ -220,6 +227,10 @@ public class HordeManager:MonoBehaviour
     public SpawnPoint GetSpawnPoint(int number)
     {
         return spawnPoints[number];
+    }
+    public int Wave()
+    {
+        return waveNumber;
     }
 /*
     IEnumerator DecreaseReward(){
