@@ -56,6 +56,7 @@ public class TowerSelection : MonoBehaviour
             selected.tower.rangeCircle.SetActive(false);
 
         selected = g;
+        Debug.Log(selected);
         if (selected != null && selected.tower != null)
         {
             selected.tower.rangeCircle.SetActive(true);

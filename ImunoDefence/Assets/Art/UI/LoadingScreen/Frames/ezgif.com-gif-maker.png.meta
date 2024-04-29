@@ -276,7 +276,7 @@ TextureImporter:
       213: 5085244695396532570
     second: ezgif.com-gif-maker_90
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -293,9 +293,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -305,11 +308,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -327,9 +330,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -341,6 +350,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -353,6 +363,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2279,9 +2316,100 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      ezgif.com-gif-maker_0: 5108601841118324724
+      ezgif.com-gif-maker_1: 763718201113852716
+      ezgif.com-gif-maker_10: -4415440932393464980
+      ezgif.com-gif-maker_11: -1205740810681323922
+      ezgif.com-gif-maker_12: -2807913808948371079
+      ezgif.com-gif-maker_13: -6210186659520421850
+      ezgif.com-gif-maker_14: 6085218192123517740
+      ezgif.com-gif-maker_15: -3098221142656904999
+      ezgif.com-gif-maker_16: -5362691222513635890
+      ezgif.com-gif-maker_17: 6326988287503335889
+      ezgif.com-gif-maker_18: -1946271401956286902
+      ezgif.com-gif-maker_19: 7493043591068940568
+      ezgif.com-gif-maker_2: 1037891125679955185
+      ezgif.com-gif-maker_20: -6809371085959695748
+      ezgif.com-gif-maker_21: -4187907744740216896
+      ezgif.com-gif-maker_22: -7299982079221094050
+      ezgif.com-gif-maker_23: 5262801672783224760
+      ezgif.com-gif-maker_24: -1043656696398758442
+      ezgif.com-gif-maker_25: -5027714466931689989
+      ezgif.com-gif-maker_26: -837714591242410733
+      ezgif.com-gif-maker_27: 3047803924789513124
+      ezgif.com-gif-maker_28: 9128138834254292934
+      ezgif.com-gif-maker_29: 1693567719685220467
+      ezgif.com-gif-maker_3: 6965229494165062650
+      ezgif.com-gif-maker_30: 5705124103282463497
+      ezgif.com-gif-maker_31: -1434855942865972087
+      ezgif.com-gif-maker_32: -5016805020390001260
+      ezgif.com-gif-maker_33: 2078111573547904136
+      ezgif.com-gif-maker_34: 1094694293067274272
+      ezgif.com-gif-maker_35: 7065532297096504250
+      ezgif.com-gif-maker_36: 4504948611649316130
+      ezgif.com-gif-maker_37: -5408455199253211806
+      ezgif.com-gif-maker_38: 2590328405260668398
+      ezgif.com-gif-maker_39: -5984260379941689168
+      ezgif.com-gif-maker_4: 7488926447407996787
+      ezgif.com-gif-maker_40: 9041275678441767894
+      ezgif.com-gif-maker_41: 2311487852533369623
+      ezgif.com-gif-maker_42: 3287805863442185252
+      ezgif.com-gif-maker_43: 5860245564613897194
+      ezgif.com-gif-maker_44: 7440538066224239540
+      ezgif.com-gif-maker_45: 5959122142804806518
+      ezgif.com-gif-maker_46: -1525329847660564063
+      ezgif.com-gif-maker_47: 1927565069387343637
+      ezgif.com-gif-maker_48: 3634917640503571253
+      ezgif.com-gif-maker_49: 2023210208450464723
+      ezgif.com-gif-maker_5: 1824921886515328041
+      ezgif.com-gif-maker_50: 5748047840044231983
+      ezgif.com-gif-maker_51: 3017054236488300025
+      ezgif.com-gif-maker_52: 7368089169679232557
+      ezgif.com-gif-maker_53: 1010854683086148155
+      ezgif.com-gif-maker_54: -3944814264483142189
+      ezgif.com-gif-maker_55: -457433335854002235
+      ezgif.com-gif-maker_56: 2761276078980678682
+      ezgif.com-gif-maker_57: 2692745785365595208
+      ezgif.com-gif-maker_58: -1773769356024904750
+      ezgif.com-gif-maker_59: 7423445106780859220
+      ezgif.com-gif-maker_6: 3779983321907253453
+      ezgif.com-gif-maker_60: 8530686097732917056
+      ezgif.com-gif-maker_61: 2645585071405098448
+      ezgif.com-gif-maker_62: -2540977823125751527
+      ezgif.com-gif-maker_63: 514332122084372674
+      ezgif.com-gif-maker_64: 3364088760168435669
+      ezgif.com-gif-maker_65: 2034210667440370728
+      ezgif.com-gif-maker_66: -6970570250126941201
+      ezgif.com-gif-maker_67: 2614739031691114802
+      ezgif.com-gif-maker_68: -2397060763709807809
+      ezgif.com-gif-maker_69: -2624921327763067146
+      ezgif.com-gif-maker_7: -966056320420023668
+      ezgif.com-gif-maker_70: -6977398840595742984
+      ezgif.com-gif-maker_71: 9158336250735389451
+      ezgif.com-gif-maker_72: 1098638578823055956
+      ezgif.com-gif-maker_73: 4711431309353339533
+      ezgif.com-gif-maker_74: 318616016021601543
+      ezgif.com-gif-maker_75: -7847710313582955155
+      ezgif.com-gif-maker_76: -7255404487296955932
+      ezgif.com-gif-maker_77: -4557924843110015452
+      ezgif.com-gif-maker_78: -8446093094980916727
+      ezgif.com-gif-maker_79: 6963999692092018577
+      ezgif.com-gif-maker_8: -8860312699811430183
+      ezgif.com-gif-maker_80: 2710761616234623903
+      ezgif.com-gif-maker_81: 8544365910151335696
+      ezgif.com-gif-maker_82: -3964160750969722423
+      ezgif.com-gif-maker_83: 3097814665535377572
+      ezgif.com-gif-maker_84: -6432875558776449035
+      ezgif.com-gif-maker_85: 5319055782948482002
+      ezgif.com-gif-maker_86: 2248326147131899408
+      ezgif.com-gif-maker_87: 1896952639593142649
+      ezgif.com-gif-maker_88: -5278638573338530745
+      ezgif.com-gif-maker_89: -7939772467568489083
+      ezgif.com-gif-maker_9: -5443729655699382175
+      ezgif.com-gif-maker_90: 5085244695396532570
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

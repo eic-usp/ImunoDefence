@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
-
-public class CustomRenderPassFeature : UnityEngine.Rendering.Universal.ScriptableRendererFeature
+public abstract class CustomRenderPassFeature : ScriptableRendererFeature
 {
     class CustomRenderPass : UnityEngine.Rendering.Universal.ScriptableRenderPass
     {
@@ -31,6 +31,8 @@ public class CustomRenderPassFeature : UnityEngine.Rendering.Universal.Scriptabl
 
     CustomRenderPass m_ScriptablePass;
 
+   // public abstract void Create();
+    //public abstract void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData);
     public override void Create()
     {
         m_ScriptablePass = new CustomRenderPass();
@@ -38,10 +40,10 @@ public class CustomRenderPassFeature : UnityEngine.Rendering.Universal.Scriptabl
         // Configures where the render pass should be injected.
         m_ScriptablePass.renderPassEvent = UnityEngine.Rendering.Universal.RenderPassEvent.AfterRenderingOpaques;
     }
-    
+
     // Here you can inject one or multiple render passes in the renderer.
-    // This method is called when setting up the renderer once per-camera.
-    public override void AddRenderPasses(UnityEngine.Rendering.Universal.ScriptableRenderer renderer, ref UnityEngine.Rendering.Universal.RenderingData renderingData)
+    // This method is called when setting up the rend   erer once per-camera.
+    public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
     {
         renderer.EnqueuePass(m_ScriptablePass);
     }
